@@ -1,1 +1,14 @@
 // Mixins in here
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-btn(@bg, @c){
+    border: 1px dotted gray;
+    background-color: @bg;
+    color: @c;
+    .center;
+    padding: 10px 40px;
+}
